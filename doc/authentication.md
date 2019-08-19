@@ -1,10 +1,10 @@
 # Authentication
 
-To validate a request, we have a decorator named `validate` in Services.Authentication.decorators
+To validate a request, we have a decorator named `validate` in services.authentication.decorators
 
 **Usage:**
 ```python
-from Services.Authentication.decorators import validate
+from services.authentication.decorators import validate
 
 @validate
 def foo(request, other_args):
@@ -21,7 +21,7 @@ Every request **MUST** have 3 GET parameters:
 
 So the decorator can apply the algorithm by `arg[0].GET.get('token')` , etc.
 
-Tips: You can refer to the `Services/Authentication/decorators.py` to understand the implementation.
+Tips: You can refer to the `services/authentication/decorators.py` to understand the implementation details.
 
 
 
